@@ -96,7 +96,15 @@ namespace Calculator_V2
             }
             else if(calculator == "/")
             {
-                resultsLabel.Text = (firstNumber / secondNumber).ToString();
+                if(secondNumber == 0)
+                {
+                    MessageBox.Show("You should NOT divide by ZERO");
+                }
+                else
+                {
+                    resultsLabel.Text = (firstNumber / secondNumber).ToString();
+                }
+                
             }
             else
             {
