@@ -237,13 +237,11 @@
             // 
             // resultsLabel
             // 
-            this.resultsLabel.AutoSize = true;
             this.resultsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultsLabel.Location = new System.Drawing.Point(29, 55);
             this.resultsLabel.Name = "resultsLabel";
-            this.resultsLabel.Size = new System.Drawing.Size(180, 29);
+            this.resultsLabel.Size = new System.Drawing.Size(231, 62);
             this.resultsLabel.TabIndex = 20;
-            this.resultsLabel.Text = "Output Results";
             // 
             // calculatorV2Form
             // 
@@ -272,7 +270,6 @@
             this.Text = " Calculator V2";
             this.Load += new System.EventHandler(this.startScreen);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

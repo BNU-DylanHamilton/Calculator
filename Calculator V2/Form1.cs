@@ -18,7 +18,6 @@ namespace Calculator_V2
         public calculatorV2Form()
         {
             InitializeComponent();
-            resultsLabel.Text = "";
         }
 
         private void numberOne(object sender, EventArgs e)
@@ -71,6 +70,10 @@ namespace Calculator_V2
             resultsLabel.Text += "0";
         }
 
+        /// <summary>
+        /// This sets the calculation, saves the current
+        /// number on screen and clears the text.
+        /// </summary>
         private void addingNumbers(object sender, EventArgs e)
         {
             firstNumber = Convert.ToDouble(resultsLabel.Text);
@@ -78,6 +81,10 @@ namespace Calculator_V2
             calculator = "+";
         }
 
+        /// <summary>
+        /// This determines which calculation to do 
+        /// depending on which button was pressed.
+        /// </summary>
         private void calculationOutcome(object sender, EventArgs e)
         {
             secondNumber = Convert.ToDouble(resultsLabel.Text);
@@ -112,6 +119,10 @@ namespace Calculator_V2
             }
         }
 
+        /// <summary>
+        /// This sets the calculation, saves the current
+        /// number on screen and clears the text.
+        /// </summary>
         private void subtractingNumbers(object sender, EventArgs e)
         {
             firstNumber = Convert.ToDouble(resultsLabel.Text);
@@ -119,6 +130,10 @@ namespace Calculator_V2
             calculator = "-";
         }
 
+        /// <summary>
+        /// This sets the calculation, saves the current
+        /// number on screen and clears the text.
+        /// </summary>
         private void multiplyingNumbers(object sender, EventArgs e)
         {
             firstNumber = Convert.ToDouble(resultsLabel.Text);
@@ -126,6 +141,10 @@ namespace Calculator_V2
             calculator = "x";
         }
 
+        /// <summary>
+        /// This sets the calculation, saves the current
+        /// number on screen and clears the text.
+        /// </summary>
         private void dividingNumbers(object sender, EventArgs e)
         {
             firstNumber = Convert.ToDouble(resultsLabel.Text);
@@ -133,6 +152,10 @@ namespace Calculator_V2
             calculator = "/";
         }
 
+        /// <summary>
+        /// This sets the calculation, saves the current
+        /// number on screen and clears the text.
+        /// </summary>
         private void powerNumbers(object sender, EventArgs e)
         {
             firstNumber = Convert.ToDouble(resultsLabel.Text);
@@ -140,6 +163,11 @@ namespace Calculator_V2
             calculator = "^";
         }
 
+        /// <summary>
+        /// This opens a start up screen before the actual
+        /// program and once clicked, has a 2 second delay
+        /// before the main program pops up.
+        /// </summary>
         private void startScreen(object sender, EventArgs e)
         {
             startUpSplashScreen SScreen = new startUpSplashScreen();
